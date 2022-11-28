@@ -1,0 +1,41 @@
+button{
+    &.#{$prefix} {
+        &btn {
+            padding: $btn-y-padding $btn-x-padding ;
+            background-color: transparent;
+            border-radius: $radius;
+            border: 1px solid rgba(0,0,0,0.8);
+            overflow: hidden;
+            font-size: $font-size;
+            line-height: $line-height;
+
+            &.primary{
+                color: white;
+                background-color: #0d6efd;
+                border-color: gray;
+            }
+
+            &.info{
+                color: white;
+                background-color:#0dcaf0;
+                border-color: gray;
+            }
+
+            &.warning{
+                color:#212529;
+                background-color: #ffc107;
+                border-color: gray;
+            }
+
+            &.#{$prefix}lg {
+                width: calc(#{$btn-y-padding} * 20);
+            }
+
+        }
+    }    
+}
+
+
+
+
+
